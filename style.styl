@@ -1,0 +1,50 @@
+@host {
+  * {
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+}
+img {
+  max-width: 100%;
+}
+.tmp {
+  width: 10%;
+  -webkit-transition: all 3s ease-out;
+  transition: all 3s ease-out;
+}
+
+.section-1-slider {
+  opacity: 0.3;
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.instagram {
+  float: left;
+	height: 100%;
+	width: 100%;
+}
+.insta-holder {
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  -webkit-transition: all 3s ease-out;
+  transform-origin:middle middle;
+  -ms-transform-origin: middle middle;
+  -webkit-transform-origin: middle middle;
+  transition: all 1s ease-out;
+  float: left;
+  width: 10%;
+  margin: 0;
+  padding: 0;
+}
+.insta-holder img {
+  float: left;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .insta-holder {
+    width: 25%;
+  }
+}

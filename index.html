@@ -1,0 +1,13 @@
+<polymer-element name="j0n-dashboard-gallery" attributes="tag count clientId" lightDom>
+  <link rel="import" href="/bower_components/polymer-elements/polymer-jsonp/polymer-jsonp.html">
+  <template>
+    <link rel="stylesheet" href="style.css">
+    <polymer-jsonp id="ajax" auto url="https://api.instagram.com/v1/tags/{{tag}}/media/recent/?client_id=76788665e03048cbacc730b8a954e58d&count={{count}}&callback="> </polymer-jsonp>
+    <div class="instagram">
+      <template id="photos" repeat="{{item in photos}}" index="i">
+        <div id="{{item.index}}" class="insta-holder"><img src="{{item.images.low_resolution.url}}" /></div>
+      </template>
+    </div>
+  </template>
+  <script src="main.js"> </script>
+</polymer-element>
